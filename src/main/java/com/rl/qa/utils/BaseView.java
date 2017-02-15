@@ -118,7 +118,7 @@ public class BaseView {
         BrowserDriver.getCurrentDriver().switchTo().frame(iframeID);
     }
 
-    //this method will find the right iframe containing specific CSS element and switch to it
+    //This method will find the right iframe containing specific CSS element and switch to it
     public static void switchToFrameWithField(String cssSelector)throws InterruptedException{
         waitForElement(By.tagName("iframe"));
         List<WebElement> iframeList = BrowserDriver.getCurrentDriver().findElements(By.tagName("iframe"));

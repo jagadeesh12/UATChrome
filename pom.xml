@@ -28,6 +28,12 @@
                 <iwms.username>superadmin</iwms.username>
                 <iwms.password>superadmin@123</iwms.password>
                 <iwms.stackname>relevancelab</iwms.stackname>
+                <iwms.slackurl>https://relevancelab.slack.com/</iwms.slackurl>
+                <iwms.slackusername>sanjay.varma@relevancelab.com</iwms.slackusername>
+                <iwms.slackpass>sanjay@123</iwms.slackpass>
+                <iwms.servicenowurl>https://ven01745.service-now.com/</iwms.servicenowurl>
+                <iwms.servicenowusername>admin</iwms.servicenowusername>
+                <iwms.servicenowpass>Virel12345M!shr@</iwms.servicenowpass>
                 <selenium.hub>http://127.0.0.1:7777/wd/hub</selenium.hub>
                 <iwms.firm>Selenium-T.262</iwms.firm>
             </properties>

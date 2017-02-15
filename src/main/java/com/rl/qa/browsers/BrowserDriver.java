@@ -272,4 +272,5 @@ public class BrowserDriver {
         webElement.isDisplayed();
         return webElement.getText().trim();
     }
+
 }

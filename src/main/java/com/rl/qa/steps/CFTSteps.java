@@ -4,12 +4,11 @@ import com.rl.qa.browsers.BrowserDriver;
 import com.rl.qa.utils.BaseView;
 import com.rl.qa.utils.SeleniumUtilities;
 import com.rl.qa.views.CFTViews;
+import com.rl.qa.views.UATViews;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
-import org.openqa.selenium.By;
+import cucumber.api.java.en.Then;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.logging.Logger;
 
@@ -22,6 +21,13 @@ import static junit.framework.TestCase.fail;
 public class CFTSteps {
     private static final Logger logger = Logger.getLogger(LoginSteps.class.getName());
     private static final com.rl.qa.utils.SeleniumUtilities SeleniumUtil = PageFactory.initElements(BrowserDriver.getCurrentDriver(), SeleniumUtilities.class);
+
+
+    String nginx_ip = null;
+    String catalyst_ip=null;
+    String TicketID=null;
+    String nginx_insta=null;
+    String catalyst_insta=null;
 
     @And("^I navigate to the \"([^\"]*)\"$")
     public void I_navigate_to_the(String strLink) throws Throwable {
@@ -89,7 +95,7 @@ public class CFTSteps {
 
     @And("^I extract IP address of \"([^\"]*)\" instance card$")
     public void I_extract_IP_address_of_instance_card(String strCardName) throws Throwable {
-        CFTViews.getIPAddress(strCardName);
+        nginx_ip = CFTViews.getIPAddress(strCardName);
     }
 
     @And("^I click on the \"([^\"]*)\" button on confirmation popup$")
@@ -119,21 +125,8 @@ public class CFTSteps {
 
     @And("^I verify the following message \"([^\"]*)\" on \"([^\"]*)\" popup window$")
     public void I_verify_the_following_message_on_popup_window(String strPopWindowText,String strSearchText) {
-        try {
-            Thread.sleep(10000);
-            SeleniumUtil.waitUntilElementContainsText("xpath",".//*[contains(./text(),'"+strPopWindowText+"')]",strPopWindowText,SeleniumUtilities.OBJWAITTIMEOUT);
-            WebDriverWait wait = new WebDriverWait(BrowserDriver.getCurrentDriver(), 160);
-            assertTrue(wait.until(ExpectedConditions.textToBePresentInElement(By.tagName("*"), strSearchText)));
-            logger.info("Verified : " + strSearchText);
-        } catch (Exception e) {
-            try {
-                SeleniumUtil.getWebElementObject("xpath", "//*[contains(text(),\"" + strSearchText + "\")]");
-            } catch (Exception ex) {
-                BaseView.takeScreenshot(strSearchText + ".png");
-                logger.info("Error :" + e.getMessage());
-                fail(e.getMessage());
-            }
-        }
+        CFTViews.verifyMessage(strPopWindowText,strSearchText);
+
     }
 
     @And("^I navigate to the trackNew$")
@@ -261,5 +254,86 @@ public class CFTSteps {
     @And("^I Verify the SoftwareStack Blueprint is created \"([^\"]*)\"$")
     public void iVerifyTheSoftwareStackBlueprintIsCreated(String strSoftwareStack) throws Throwable {
         CFTViews.VerifySoftwareStackBlueprint(strSoftwareStack);
+    }
+
+    @And("^I verify \"([^\"]*)\" Botname for \"([^\"]*)\"$")
+    public void iVerifyBotnameFor(String arg0, String arg1) throws Throwable {
+        System.out.println(nginx_ip);
+        CFTViews.verifyIp(nginx_ip);
+    }
+
+    @And("^I enter \"([^\"]*)\" Botname for \"([^\"]*)\"$")
+    public void iEnterBotnameFor(String arg0, String arg1) throws Throwable {
+        System.out.println(nginx_ip);
+        CFTViews.verifyIp(nginx_ip);
+
+    }
+
+    @Then("^I verify the Nginx is down$")
+    public void iVerifyTheNginxIsDown() throws Throwable {
+        System.out.println(nginx_ip);
+        CFTViews.verifyNginx(nginx_ip);
+
+    }
+
+    @And("^I extract the Ticket ID$")
+    public void iExtractTheTicketID() throws Throwable {
+
+
+           TicketID= UATViews.extractTicket(nginx_ip);
+           System.out.println("=====================");
+           System.out.println(TicketID);
+        System.out.println("=====================");
+        }
+
+    @And("^I search the Ticket ID$")
+    public void iSearchTheTicketID() throws Throwable {
+        UATViews.searchTicket(TicketID);
+
+    }
+
+    @And("^I extract IP address of NginX instance card$")
+    public void iExtractIPAddressOfNginXInstanceCard() throws Throwable {
+        String strCardName="NginX";
+        nginx_ip = UATViews.getIPAddress(strCardName);
+
+    }
+
+    @And("^I extract IP address of Catayst instance card$")
+    public void iExtractIPAddressOfCataystInstanceCard() throws Throwable {
+        String strCardName="Catalyst";
+        catalyst_ip = UATViews.getIPAddress(strCardName);
+
+    }
+
+    @And("^I verify Nginx IP$")
+    public void iVerifyNginxIP() throws Throwable {
+        nginx_insta= UATViews.verifyNginxIP(nginx_ip);
+        System.out.println("=============>");
+        System.out.println(nginx_insta);
+    }
+
+    @And("^I verify Catalyst IP$")
+    public void iVerifyCatalystIP() throws Throwable {
+        catalyst_insta=UATViews.verifyCatalystIP(catalyst_ip);
+
+    }
+
+    @And("^I verify events$")
+    public void iVerifyEvents() throws Throwable {
+        System.out.println("=============>");
+        System.out.println(nginx_insta);
+        UATViews.verifyStatus(nginx_insta);
+
+    }
+
+    @And("^I verify Ticket status$")
+    public void iVerifyTicketStatus() throws Throwable {
+        System.out.println("=====================");
+        System.out.println(TicketID);
+        System.out.println("=====================");
+
+        UATViews.verifyTicketStatus(TicketID);
+
     }
 }

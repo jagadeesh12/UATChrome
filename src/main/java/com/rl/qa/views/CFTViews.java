@@ -4,6 +4,8 @@ import com.rl.qa.browsers.BrowserDriver;
 import com.rl.qa.steps.LoginSteps;
 import com.rl.qa.utils.BaseView;
 import com.rl.qa.utils.SeleniumUtilities;
+import com.thoughtworks.selenium.Selenium;
+import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -24,6 +26,8 @@ public class CFTViews {
     public static WebElement PagesFrame;
     public static String stackName="";
     private static final Logger logger = Logger.getLogger(LoginSteps.class.getName());
+    private static String IPAddress;
+
     public static void clickOnWorkZoneLink(){
         try {
             Thread.sleep(3000);
@@ -39,7 +43,8 @@ public class CFTViews {
 
     public static void clickOntheLink(String strLink){
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5000);
+            SeleniumUtil.mouseOver("xpath",".//*[@id='header-logo']/img",SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.waitForElementIsClickable("paritallinktext", strLink, 10, SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.click("paritallinktext", strLink, SeleniumUtilities.OBJWAITTIMEOUT);
         }
@@ -125,6 +130,8 @@ public class CFTViews {
         try {
             Thread.sleep(5000);
             SeleniumUtil.waitForElementVisibilityOf("cssselector", "div[data-stackname='" + strStackName + "']", 10, SeleniumUtilities.OBJWAITTIMEOUT);
+            Thread.sleep(120000);
+            SeleniumUtil.click("xpath","//button[@class='btn btn-xs cat-btn-update']",2);
             SeleniumUtil.waitUntilElementContainsText("cssselector","div[data-stackname='"+strStackName+"'] span[class='stackStatus']",strStatus,200,SeleniumUtilities.OBJWAITTIMEOUT);
         }
         catch(Exception ex){
@@ -145,16 +152,19 @@ public class CFTViews {
         }
     }
 
-    public static void getIPAddress(String strCardName){
+    public static String getIPAddress(String strCardName){
         try {
-            String IPAddress = SeleniumUtil.getTextValue("xpath", ".//span[@data-original-title='"+strCardName+"']/parent::div/following-sibling::div[2]/div/span[1]", SeleniumUtilities.OBJWAITTIMEOUT);
+            CFTViews.IPAddress = SeleniumUtil.getTextValue("xpath", "//div[text()='"+strCardName+"']/../following::div[3]/strong", SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.Log.info("IP Address :"+IPAddress);
+
+
         }
         catch(Exception ex){
             BaseView.takeScreenshot("getIPAddress");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
         }
+        return IPAddress;
     }
 
     public static void clickOnConfirmatinButton(){
@@ -365,7 +375,7 @@ public class CFTViews {
     public static void refreshCFTStackPage() {
         try {
             for (int i = 0; i < 10; i++) {
-                if (SeleniumUtil.verifyTextValue("cssselector", ".stackStatus.orange", "CREATE_IN_PROGRESS", SeleniumUtilities.OBJWAITTIMEOUT)) {
+                if (SeleniumUtil.verifyTextValue("xpath", "//*[contains(text(),'"+stackName+"')]", "CREATE_IN_PROGRESS", SeleniumUtilities.OBJWAITTIMEOUT)) {
                     Thread.sleep(3000);
                     SeleniumUtil.click("xpath", ".//*[@id='cloudFormationPage']//button", SeleniumUtilities.OBJWAITTIMEOUT);
                 }
@@ -480,9 +490,72 @@ public class CFTViews {
     }
 
 
+    public static void refreshInstancePage() {
+        try {
+                    Thread.sleep(3000);
+                    SeleniumUtil.click("xpath", ".//*[@id='instancePage']//button[3]", SeleniumUtilities.OBJWAITTIMEOUT);
 
+        }
+        catch(Exception ex){
+            BaseView.takeScreenshot("clickOnBlueprintType");
+            SeleniumUtil.Log.info("Error :" + ex.getMessage());
+            fail(ex.getMessage());
+        }
+    }
 
+    public static void verifyMessage(String strPopWindowText,String strSearchText) {
 
+        try {
+            Thread.sleep(10000);
+            SeleniumUtil.waitUntilElementContainsText("xpath",".//*[contains(./text(),'"+strPopWindowText+"')]",strPopWindowText,SeleniumUtilities.OBJWAITTIMEOUT);
+            WebDriverWait wait = new WebDriverWait(BrowserDriver.getCurrentDriver(), 160);
+            Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElement(By.tagName("*"), strSearchText)));
+            logger.info("Verified : " + strSearchText);
+        } catch (Exception e) {
+            try {
+                SeleniumUtil.getWebElementObject("xpath", "//*[contains(text()," + strSearchText + ")]");
+            } catch (Exception ex) {
+                BaseView.takeScreenshot(strSearchText + ".png");
+                logger.info("Error :" + e.getMessage());
+                fail(e.getMessage());
+            }
+        }
+    }
 
+    public static void verifyIp(String ip) {
+        try {
+            SeleniumUtil.waitForElementPresent("xpath", ".//*[@id='booleanTable']/tbody/tr[4]/td[3]/input");
+//            String Nginx = SeleniumUtil.getTextValue("xpath", ".//*[@id='booleanTable']/tbody/tr[4]/td[3]/input", SeleniumUtilities.OBJWAITTIMEOUT);
+//            System.out.println(Nginx);
+            //String IP="52.52.165.182";
+            //System.out.print(IP);
+            SeleniumUtil.clear("xpath", ".//*[@id='booleanTable']/tbody/tr[4]/td[3]/input",SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.type("xpath", ".//*[@id='booleanTable']/tbody/tr[4]/td[3]/input",ip, SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath",".//*[@id='editParamsPage']/form/div[3]/button[2]",SeleniumUtilities.OBJWAITTIMEOUT);
 
+        }
+        catch(Exception ex){ BaseView.takeScreenshot("clickOnBlueprintType");
+            SeleniumUtil.Log.info("Error :" + ex.getMessage());
+            fail(ex.getMessage());
+
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
+    public static void verifyNginx(String ip) {
+        try {
+            String IP="52.52.27.189";
+            Thread.sleep(3000);
+           String Nginx= SeleniumUtil.getTextValue("xpath", "//div[contains(text(),'Service nginx is up for "+IP+".')]", SeleniumUtilities.OBJWAITTIMEOUT);
+           System.out.println(Nginx);
+
+        }
+        catch(Exception ex){
+            BaseView.takeScreenshot("clickOnBlueprintType");
+            SeleniumUtil.Log.info("Error :" + ex.getMessage());
+            fail(ex.getMessage());
+        }
+
+    }
 }

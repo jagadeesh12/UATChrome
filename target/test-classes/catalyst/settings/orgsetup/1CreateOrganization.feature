@@ -18,6 +18,7 @@ Feature: As a super user Create Organization
     Then I select the "<Organization>" and verify "Delete" Button is enabled
     Then I select the "<Organization>" and verify "Edit" Button is enabled
 
+
     Examples:
       | Login User   | Organization |Domain Name   |
       | superadmin   |     UAT_RL   |www.uat_rl.com|
