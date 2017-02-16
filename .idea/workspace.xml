@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c2efce-db95-48b9-8b00-f8110e9f1a01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CFTSteps.class" afterPath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CFTSteps.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/UATViews.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/UATSteps.class" afterPath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/UATSteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CFTViews.class" afterPath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CFTViews.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/UATViews.class" afterPath="$PROJECT_DIR$/target/classes/com/rl/qa/views/UATViews.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/browsers/BrowserDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/browsers/BrowserDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CreateEditDelBGroupSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CreateEditDelBGroupSteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/utils/BaseView.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/utils/BaseView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/lx-selenium.properties" afterPath="$PROJECT_DIR$/src/main/resources/lx-selenium.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" afterPath="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/catalyst/settings/orgsetup/1CreateOrganization.feature" afterPath="$PROJECT_DIR$/src/test/resources/catalyst/settings/orgsetup/1CreateOrganization.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lx-selenium.properties" afterPath="$PROJECT_DIR$/target/classes/lx-selenium.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/UAT/UAT.feature" afterPath="$PROJECT_DIR$/target/test-classes/catalyst/settings/UAT/UAT.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/1CreateOrganization.feature" afterPath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/1CreateOrganization.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UAT.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UAT.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -53,8 +42,8 @@
       <file leaf-file-name="UATViews.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="674" column="23" lean-forward="false" selection-start-line="674" selection-start-column="23" selection-end-line="674" selection-end-column="23" />
+            <state relative-caret-position="214">
+              <caret line="856" column="88" lean-forward="false" selection-start-line="856" selection-start-column="88" selection-end-line="856" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -63,7 +52,7 @@
       <file leaf-file-name="SeleniumUtilities.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/utils/SeleniumUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="138">
               <caret line="1710" column="19" lean-forward="false" selection-start-line="1710" selection-start-column="19" selection-end-line="1710" selection-end-column="19" />
               <folding />
             </state>
@@ -73,18 +62,18 @@
       <file leaf-file-name="UATSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="394" column="31" lean-forward="true" selection-start-line="394" selection-start-column="31" selection-end-line="394" selection-end-column="31" />
+            <state relative-caret-position="269">
+              <caret line="469" column="20" lean-forward="false" selection-start-line="469" selection-start-column="20" selection-end-line="469" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CFTSteps.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CFTSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="309" column="16" lean-forward="false" selection-start-line="309" selection-start-column="16" selection-end-line="309" selection-end-column="16" />
+            <state relative-caret-position="138">
+              <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -103,6 +92,7 @@
     <findStrings>
       <find>aunc</find>
       <find>getip</find>
+      <find>SeleniumUtil.waitforElementPre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,10 +118,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CreateEditDelBGroupSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/sanjay.feature" />
         <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" />
       </list>
     </option>
   </component>
@@ -221,6 +211,32 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -269,8 +285,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -687,39 +703,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 16h 02m 41s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 15h 28m 05s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 16h 13m 17s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 15h 48m 13s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 16h 20m 22s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 16h 09m 00s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 16h 26m 35s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 16h 34m 19s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 16h 53m 27s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 16h 38m 01s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 16h 58m 01s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 16h 57m 03s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 17h 04m 51s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 17h 19m 40s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 17h 10m 38s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 17h 22m 17s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 17h 18m 33s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 17h 29m 32s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.15 at 17h 28m 36s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.16 at 17h 52m 32s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="7" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -731,8 +747,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32031873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29446936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29446936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -742,8 +758,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39940387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -756,7 +772,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -764,20 +782,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/users/Administrator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/users/Broker.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/users/Delete.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1000,19 +1004,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/ServiceController.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/orgsetup/CreateEditDelProject.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,15 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/StackName.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,14 +1040,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/sanjay.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/sanjay.feature" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1076,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,8 +1061,8 @@
         <state relative-caret-position="139">
           <caret line="79" column="47" lean-forward="true" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding>
-            <element signature="e#4282#4283#0" expanded="true" />
-            <element signature="e#4344#4345#0" expanded="true" />
+            <element signature="e#4282#4283#0" expanded="false" />
+            <element signature="e#4344#4345#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1099,42 +1075,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/ServiceController.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/StackName.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/providersync/providersync.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/gallerysetup/1CreateSoftwareStackTemp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/utils/SeleniumUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="138">
           <caret line="1710" column="19" lean-forward="false" selection-start-line="1710" selection-start-column="19" selection-end-line="1710" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="394" column="31" lean-forward="true" selection-start-line="394" selection-start-column="31" selection-end-line="394" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="674" column="23" lean-forward="false" selection-start-line="674" selection-start-column="23" selection-end-line="674" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="309" column="16" lean-forward="false" selection-start-line="309" selection-start-column="16" selection-end-line="309" selection-end-column="16" />
+        <state relative-caret-position="138">
+          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="469" column="20" lean-forward="false" selection-start-line="469" selection-start-column="20" selection-end-line="469" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="856" column="88" lean-forward="false" selection-start-line="856" selection-start-column="88" selection-end-line="856" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
         </state>
       </provider>

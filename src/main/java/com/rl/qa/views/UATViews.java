@@ -3,6 +3,7 @@ package com.rl.qa.views;
 import com.rl.qa.browsers.BrowserDriver;
 import com.rl.qa.utils.BaseView;
 import com.rl.qa.utils.SeleniumUtilities;
+import com.thoughtworks.selenium.Selenium;
 import junit.framework.Assert;
 import org.openqa.selenium.support.PageFactory;
 
@@ -363,10 +364,10 @@ public class UATViews
 
                Assert.assertTrue(SeleniumUtil.isElementExist("id", "username"));
                Thread.sleep(60000);
-               System.out.println("Username found");
+
                Assert.assertTrue(SeleniumUtil.isElementExist("id", "password"));
                Assert.assertTrue(SeleniumUtil.isElementExist("id", "loginBtn"));
-               System.out.println("Login button found");
+
                 //SeleniumUtil.getWebDriver().switchTo().window(parentwin);
 
 
@@ -501,12 +502,12 @@ public class UATViews
                 Thread.sleep(60000);
                 Assert.assertFalse(SeleniumUtil.isElementExist("id", "username"));
 
-                System.out.println("Username found");
+
                 Assert.assertFalse(SeleniumUtil.isElementExist("id", "password"));
 
                 Assert.assertFalse(SeleniumUtil.isElementExist("id", "loginBtn"));
 
-                System.out.println("Login button found");
+
                 //SeleniumUtil.getWebDriver().switchTo().window(parentwin);
 
 
@@ -572,10 +573,11 @@ public class UATViews
 
     public static String extractTicket(String nginx_ip) {
         String ticketID = null;
-        String IP="52.52.27.189";
+        //String IP="52.52.27.189";
         try {
-            SeleniumUtil.waitForElementVisibilityOf("xpath", "//div[contains(text(),'Service nginx is up for "+IP+".')]", 10, SeleniumUtilities.OBJWAITTIMEOUT);
-            ticketID = SeleniumUtil.getTextValue("xpath", "//div[contains(text(),'Service nginx is up for "+IP+".')]/a", SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.waitForElementVisibilityOf("xpath", "//div[contains(text(),'Service nginx is up for "+nginx_ip+".')]", 10, SeleniumUtilities.OBJWAITTIMEOUT);
+            ticketID = SeleniumUtil.getTextValue("xpath", "//div[contains(text(),'Service nginx is up for "+nginx_ip+".')]/a", SeleniumUtilities.OBJWAITTIMEOUT);
+            //SeleniumUtil.click("xpath","//div[contains(text(),'Service nginx is up for "+nginx_ip+".')]/a",SeleniumUtilities.OBJWAITTIMEOUT);
         } catch (Exception ex) {
             BaseView.takeScreenshot("verifyingInstancesInTelemetry");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
@@ -634,6 +636,7 @@ public class UATViews
     public static String verifyNginxIP(String nginx_ip) {
         try {
             Thread.sleep(2000);
+            SeleniumUtil.waitForElementPresent("xpath","//*[text()='"+nginx_ip+"']");
             if(SeleniumUtil.verifyTextValue("xpath","//*[text()='"+nginx_ip+"']",nginx_ip,SeleniumUtilities.OBJWAITTIMEOUT)==true)
             {
                 NginxInstance=SeleniumUtil.getTextValue("xpath","//td[text()='"+nginx_ip+"']/preceding::td[4]/a",SeleniumUtilities.OBJWAITTIMEOUT);
@@ -646,6 +649,8 @@ public class UATViews
             BaseView.takeScreenshot("getIPAddress");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
         }
         return NginxInstance;
 
@@ -672,13 +677,21 @@ public class UATViews
 
     }
 
-    public static void verifyStatus(String nginx_insta) {
-        try {   SeleniumUtil.Log.info("NginX IP:"+nginx_insta);
-                SeleniumUtil.waitForElementPresent("xapth","//label[text()='Instance']");
-                SeleniumUtil.type("xapth","//label[text()='Instance']/following::div[1]/div/div",nginx_insta,SeleniumUtilities.OBJWAITTIMEOUT);
-                SeleniumUtil.click("xpath","//button[@class='btn btn-xs btn-search' and @title='Search']",SeleniumUtilities.OBJWAITTIMEOUT);
-               try{ SeleniumUtil.waitForElementVisibilityOf("xpath","//span[@class='txt-criticle ng-scope'and @ng-switch-when='2  and @uib-tooltip='Critical']",SeleniumUtilities.OBJWAITTIMEOUT);
-                SeleniumUtil.waitForElementVisibilityOf("xpath","//span[@class='txt-aqua ng-scope' and @uib-tooltip='Info' and  @ng-switch-when='0']",SeleniumUtilities.OBJWAITTIMEOUT);}
+    public static void verifyStatus(String nginx_insta, String nginx_ip) {
+        try {
+
+            SeleniumUtil.Log.info("NginX IP:"+nginx_insta);
+            SeleniumUtil.switchToFrameHavingElement("xpath","//label[text()='Instance']/following::div[1]/div/div");
+//            SeleniumUtil.type("xapth","//label[text()='Instance']/following::div[1]/div/div/following::input[1]",nginx_insta,SeleniumUtilities.OBJWAITTIMEOUT);
+//            SeleniumUtil.click("xpath","//span[text()='NginX - "+nginx_ip+"']",SeleniumUtilities.OBJWAITTIMEOUT);
+//            SeleniumUtil.click("xpath","//button[@class='btn btn-xs btn-search' and @title='Search']",SeleniumUtilities.OBJWAITTIMEOUT);
+
+               try{
+//                    SeleniumUtil.waitForElementVisibilityOf("xpath","//span[@class='txt-criticle ng-scope'and @ng-switch-when='2  and @uib-tooltip='Critical']",SeleniumUtilities.OBJWAITTIMEOUT);
+//                    SeleniumUtil.waitForElementVisibilityOf("xpath","//span[@class='txt-aqua ng-scope' and @uib-tooltip='Info' and  @ng-switch-when='0']",SeleniumUtilities.OBJWAITTIMEOUT);
+                    Assert.assertTrue(SeleniumUtil.isElementExist("xpath","//td[text()='"+nginx_insta+"']/preceding::td/span[@class='txt-aqua ng-scope' and @uib-tooltip='Info' and  @ng-switch-when='0']"));
+                    Assert.assertTrue(SeleniumUtil.isElementExist("xpath","//td[text()='"+nginx_insta+"']/preceding::td/span [@class='txt-criticle ng-scope' and @uib-tooltip='Critical' and @ng-switch-when='2']"));
+                 }
                 catch (Exception e){
                     Assert.fail("Status not found");
                 }
@@ -687,7 +700,8 @@ public class UATViews
             BaseView.takeScreenshot("getIPAddress");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
-        } catch (Throwable throwable) {
+        }
+        catch (Throwable throwable) {
             throwable.printStackTrace();
         }
 
@@ -699,10 +713,23 @@ public class UATViews
             System.out.println("=====================>");
             System.out.println(ticketID);
             System.out.println("=====================>");
-            SeleniumUtil.switchToFrameHavingElement("xpath","//a[text()='"+ticketID+"']");
-            SeleniumUtil.waitForElementPresent("xapth","//a[text()='"+ticketID+"']");
-             String state=SeleniumUtil.getTextValue("xpath","//a[text()='"+ticketID+"']/../following::td[5]",SeleniumUtilities.OBJWAITTIMEOUT);
-            Assert.assertEquals("Closed",state);
+            SeleniumUtil.switchToFrameHavingElement("id","incident.state");
+            SeleniumUtil.waitForElementPresent("id","incident.state");
+//
+//            try {
+               // String status = SeleniumUtil.getTextValue("id", "incident.state", SeleniumUtilities.OBJWAITTIMEOUT);
+            String status=SeleniumUtil.getFirstSelectedOption("id", "incident.state", SeleniumUtilities.OBJWAITTIMEOUT);
+                SeleniumUtil.Log.info("Status :" +status );
+                Assert.assertEquals("Closed", status);
+//            }
+//            catch(Exception e){
+//                String status=SeleniumUtil.getTextValue("xpath","//a[text()='"+ticketID+"']/../following::td[5]",SeleniumUtilities.OBJWAITTIMEOUT);
+//                SeleniumUtil.Log.info("Status :" +status );
+//                Assert.assertEquals("Closed",status);
+//
+//
+//
+//            }
 
 
         }
@@ -771,5 +798,72 @@ public class UATViews
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
         }
+    }
+
+    public static void verifyTicketClosed() {
+        String parentwin=SeleniumUtil.getWebDriver().getWindowHandle();
+        Set<String> winHandles = SeleniumUtil.getWebDriver().getWindowHandles();
+        Iterator<String> it = winHandles.iterator();
+
+        String childwin=it.next();
+        SeleniumUtil.getWebDriver().switchTo().window(childwin);
+        try{
+            Thread.sleep(2000);
+
+//            boolean flag=true;
+//            SeleniumUtil.getChildWindow(flag);
+
+            String status=SeleniumUtil.getTextValue("id","incident.state",SeleniumUtilities.OBJWAITTIMEOUT);
+            Assert.assertEquals("Closed",status);
+
+        }
+        catch(Exception ex){
+            BaseView.takeScreenshot("ServiceNowLogin");
+            SeleniumUtil.Log.info("Error :" + ex.getMessage());
+            fail(ex.getMessage());
+
+
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        SeleniumUtil.getWebDriver().switchTo().window(parentwin);
+    }
+
+
+    public static void deletestack(String stackName) {
+        try {
+            Thread.sleep(2000);
+            SeleniumUtil.elementShouldVisible("xpath","//*[contains(text(),'"+stackName+"')]",10,SeleniumUtilities.OBJWAITTIMEOUT);
+
+            SeleniumUtil.click("xpath","//*[contains(text(),'releavncelab')]/../../../following-sibling::div[2]/span",SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.elementShouldVisible("xpath",".//*[@id='removeCFTPage']/div[3]/button[2]",4,SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath",".//*[@id='removeCFTPage']/div[3]/button[2]",SeleniumUtilities.OBJWAITTIMEOUT);
+
+
+        }
+        catch(Exception ex){
+            BaseView.takeScreenshot("Deleting CFT stack");
+            SeleniumUtil.Log.info("Error :" + ex.getMessage());
+            fail(ex.getMessage());
+        }
+
+    }
+
+    public static void logoutcat() {
+        try {
+            Thread.sleep(2000);
+            SeleniumUtil.elementShouldVisible("id","logout",2,SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("id","logout",SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.elementShouldVisible("xpath",".//*[@id='Msg1']/div/div/button[2]",2,SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath",".//*[@id='Msg1']/div/div/button[2]",SeleniumUtilities.OBJWAITTIMEOUT);
+
+        }
+        catch(Exception ex){
+            BaseView.takeScreenshot("ServiceNowLogin");
+            SeleniumUtil.Log.info("Error :" + ex.getMessage());
+            fail(ex.getMessage());
+        }
+
+
     }
 }

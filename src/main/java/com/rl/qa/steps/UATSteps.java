@@ -294,9 +294,19 @@ public class UATSteps {
         String appURL= stackName+".rlcatalyst.com";
         SeleniumUtil.getWebDriver();
 
+
+        String username =properties.getProperty("iwms.username","not_filtered");
+        System.out.println(username);
+
+        String pass=properties.getProperty("iwms.password", "not_filtered");
+        System.out.println(pass);
+
         BrowserDriver.loadPage(appURL);
 
         UATViews.verifyNewStack(appURL);
+        UATViews.enterUsername(username);
+        UATViews.enterPassword(pass);
+        UATViews.clickLoginButton();
     }
 
     @And("^I enter \"([^\"]*)\" in search box$")
@@ -436,5 +446,27 @@ public class UATSteps {
         BrowserDriver.loadPage(appURL);
 
 
+    }
+
+    @Then("^Ticket status should be closed$")
+    public void ticketStatusShouldBeClosed() throws Throwable {
+       UATViews.verifyTicketClosed();
+    }
+
+    @And("^I Delete the stack from Cloud Formation$")
+    public void iDeleteTheStackFromCloudFormation() throws Throwable {
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        InputStream stream =classLoader.getResourceAsStream("lx-selenium.properties");
+        Properties properties = new Properties();
+        properties.load(stream);
+
+        String stackName =properties.getProperty("iwms.stackname","not_filtered");
+        System.out.println(stackName);
+        UATViews.deletestack(stackName);
+    }
+
+    @And("^I logout from catalyst$")
+    public void iLogoutFromCatalyst() throws Throwable {
+      UATViews.logoutcat();
     }
 }

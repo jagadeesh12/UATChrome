@@ -322,8 +322,9 @@ public class CFTSteps {
     @And("^I verify events$")
     public void iVerifyEvents() throws Throwable {
         System.out.println("=============>");
+        System.out.println(nginx_ip);
         System.out.println(nginx_insta);
-        UATViews.verifyStatus(nginx_insta);
+        UATViews.verifyStatus(nginx_insta,nginx_ip);
 
     }
 
