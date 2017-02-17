@@ -507,9 +507,10 @@ public class CFTViews {
 
         try {
             Thread.sleep(10000);
-            SeleniumUtil.waitUntilElementContainsText("xpath",".//*[contains(./text(),'"+strPopWindowText+"')]",strPopWindowText,SeleniumUtilities.OBJWAITTIMEOUT);
-            WebDriverWait wait = new WebDriverWait(BrowserDriver.getCurrentDriver(), 160);
-            Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElement(By.tagName("*"), strSearchText)));
+            Assert.assertTrue(SeleniumUtil.waitUntilElementContainsText("xpath",".//*[contains(./text(),'"+strPopWindowText+"')]",strPopWindowText,SeleniumUtilities.OBJWAITTIMEOUT));
+//            WebDriverWait wait = new WebDriverWait(BrowserDriver.getCurrentDriver(), 160);
+//            Assert.assertTrue(wait.until(ExpectedConditions.textToBePresentInElement(By.tagName("*"), strSearchText)));
+
             logger.info("Verified : " + strSearchText);
         } catch (Exception e) {
             try {
@@ -545,9 +546,9 @@ public class CFTViews {
 
     public static void verifyNginx(String ip) {
         try {
-            String IP="52.52.27.189";
+            //String IP="52.52.27.189";
             Thread.sleep(3000);
-           String Nginx= SeleniumUtil.getTextValue("xpath", "//div[contains(text(),'Service nginx is up for "+IP+".')]", SeleniumUtilities.OBJWAITTIMEOUT);
+           String Nginx= SeleniumUtil.getTextValue("xpath", "//div[contains(text(),'Service nginx is up for "+ip+".')]", SeleniumUtilities.OBJWAITTIMEOUT);
            System.out.println(Nginx);
 
         }

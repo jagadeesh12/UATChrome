@@ -1,6 +1,7 @@
 package com.rl.qa.views;
 
 import com.rl.qa.browsers.BrowserDriver;
+import com.rl.qa.steps.LoginSteps;
 import com.rl.qa.utils.BaseView;
 import com.rl.qa.utils.SeleniumUtilities;
 import com.thoughtworks.selenium.Selenium;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.logging.Logger;
 
 import static junit.framework.TestCase.fail;
 
@@ -21,6 +23,7 @@ public class UATViews
     private static String IPAddress;
     private static String NginxInstance;
     private static String CatalystInstance;
+    private static final Logger logger = Logger.getLogger(LoginSteps.class.getName());
 
     public static void enterUsername(String username)
     {
@@ -301,6 +304,7 @@ public class UATViews
             Assert.assertEquals(instance2,instance4);
 
 
+
         }
         catch(Exception ex){
             BaseView.takeScreenshot("verifyInstances");
@@ -437,6 +441,7 @@ public class UATViews
         try {
 
             Thread.sleep(20000);
+            SeleniumUtil.waitForElementVisibilityOf("xpath","//span[contains(text(),'Task execution success for script Stop Service')]",SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.click("xpath",".//*[@id='orchestrationLogPage']/div[3]/button",SeleniumUtilities.OBJWAITTIMEOUT);
 
         }
@@ -486,7 +491,8 @@ public class UATViews
 
     public static void clickOnProject() {
         try {
-            SeleniumUtil.click("xpath",".//*[@id='channel-list']/li[1]/a/span[3]/span", SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.waitForElementIsClickable("xpath",".//*[@id='channel-list']/li[1]/button",4,SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath",".//*[@id='channel-list']/li[1]/button", SeleniumUtilities.OBJWAITTIMEOUT);
         }
         catch(Exception ex){
             BaseView.takeScreenshot("enterUsername");
@@ -635,14 +641,15 @@ public class UATViews
 
     public static String verifyNginxIP(String nginx_ip) {
         try {
-            Thread.sleep(2000);
-            SeleniumUtil.waitForElementPresent("xpath","//*[text()='"+nginx_ip+"']");
-            if(SeleniumUtil.verifyTextValue("xpath","//*[text()='"+nginx_ip+"']",nginx_ip,SeleniumUtilities.OBJWAITTIMEOUT)==true)
-            {
-                NginxInstance=SeleniumUtil.getTextValue("xpath","//td[text()='"+nginx_ip+"']/preceding::td[4]/a",SeleniumUtilities.OBJWAITTIMEOUT);
-
+            for(int i=0;i<=3;i++) {
+                Thread.sleep(10000);
+                SeleniumUtil.waitForElementPresent("xpath", "//*[text()='" + nginx_ip + "']");
+               // if (SeleniumUtil.verifyTextValue("xpath", "//*[text()='" + nginx_ip + "']", nginx_ip, SeleniumUtilities.OBJWAITTIMEOUT) == true) {
+                    Assert.assertTrue(SeleniumUtil.verifyTextValue("xpath", "//*[text()='" + nginx_ip + "']", nginx_ip, SeleniumUtilities.OBJWAITTIMEOUT));
+                    NginxInstance = SeleniumUtil.getTextValue("xpath", "//td[text()='" + nginx_ip + "']/preceding::td[4]/a", SeleniumUtilities.OBJWAITTIMEOUT);
+                    break;
+                //}
             }
-
 
         }
         catch(Exception ex){
@@ -690,6 +697,7 @@ public class UATViews
 //                    SeleniumUtil.waitForElementVisibilityOf("xpath","//span[@class='txt-criticle ng-scope'and @ng-switch-when='2  and @uib-tooltip='Critical']",SeleniumUtilities.OBJWAITTIMEOUT);
 //                    SeleniumUtil.waitForElementVisibilityOf("xpath","//span[@class='txt-aqua ng-scope' and @uib-tooltip='Info' and  @ng-switch-when='0']",SeleniumUtilities.OBJWAITTIMEOUT);
                     Assert.assertTrue(SeleniumUtil.isElementExist("xpath","//td[text()='"+nginx_insta+"']/preceding::td/span[@class='txt-aqua ng-scope' and @uib-tooltip='Info' and  @ng-switch-when='0']"));
+                    logger.info("Verified : Critical Nginx Instances");
                     Assert.assertTrue(SeleniumUtil.isElementExist("xpath","//td[text()='"+nginx_insta+"']/preceding::td/span [@class='txt-criticle ng-scope' and @uib-tooltip='Critical' and @ng-switch-when='2']"));
                  }
                 catch (Exception e){
@@ -835,7 +843,7 @@ public class UATViews
             Thread.sleep(2000);
             SeleniumUtil.elementShouldVisible("xpath","//*[contains(text(),'"+stackName+"')]",10,SeleniumUtilities.OBJWAITTIMEOUT);
 
-            SeleniumUtil.click("xpath","//*[contains(text(),'releavncelab')]/../../../following-sibling::div[2]/span",SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath","//*[contains(text(),'"+stackName+"')]/../../../following-sibling::div[2]/span",SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.elementShouldVisible("xpath",".//*[@id='removeCFTPage']/div[3]/button[2]",4,SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.click("xpath",".//*[@id='removeCFTPage']/div[3]/button[2]",SeleniumUtilities.OBJWAITTIMEOUT);
 
