@@ -2,13 +2,481 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c2efce-db95-48b9-8b00-f8110e9f1a01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CFTViews.class" afterPath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CFTViews.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/UATViews.class" afterPath="$PROJECT_DIR$/target/classes/com/rl/qa/views/UATViews.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/CreateJiraUserRunner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/CreateOrganizationRunner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/DeleteOrganizationRunner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner4.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner5.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner6.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestRunner7.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/IEDriverServer.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/JSErrorCollector-0.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/Delete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/FileUtilities.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/browsers/BrowserDriver$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/browsers/BrowserDriver$BrowserCleanup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/browsers/BrowserDriver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/browsers/BrowserFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/browsers/BrowserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/browsers/BrowserType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CFTSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ChefServerSetupSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ConfigBlueprintForOSImageUsingProAWSSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ConfigBlueprintForSSTempUsingProAWSSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ConfigureNexusServerSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ConfigureProviderSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ConfigurePuppetServerSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelBGroupSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelDesignerSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelDockerSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelEnvSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelJenkinsSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelOrgSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDelProjectSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/CreateEditDeleteTeamSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ImportNodeFromChefSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/JiraSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/LoginSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/ProivderSyncSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/TemplateSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/UATSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/steps/VMImageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/AjaxEnabledPageFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/BaseView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/CucumberContext$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/CucumberContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/ForceWaitForItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/SeleniumUtilities$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/SeleniumUtilities$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/SeleniumUtilities$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/SeleniumUtilities$Locators.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/SeleniumUtilities.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/SpreadsheetUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/StaleReferenceAwareFieldDecorator$StaleReferenceAwareElementLocator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/StaleReferenceAwareFieldDecorator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/utils/ThreadPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CFTViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ChefServerSetupViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ConfigBlueprintForOSImageUsingProAWSViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ConfigBlueprintForSSTempUsingProAWSViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ConfigureNexusServerViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ConfigureProviderViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ConfigurePuppetServerViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelBGroupViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelDesignerViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelDockerViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelEnvViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelJenkinsViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelOrgViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDelProjectViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/CreateEditDeleteTeamViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/ImportNodesFromChefViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/JIRAViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/LoginViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/TemplateViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/UATViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rl/qa/views/VMImageViews.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/firebug/firebug-1.9.2.xpi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lx-selenium.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/Administrator.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/Broker.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/Delete.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/Edit.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/NoAccessInAdminDash.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/No_Access.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/users/View.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cucumber/formatter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cucumber/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cucumber/jquery-1.8.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cucumber/report.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cucumber/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/reports/json/UATforCFT.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnOKButton03022017_044438.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnOKButton07022017_033144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnOKButton07022017_033846.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnOKButton07022017_041634.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnOKButton08022017_023448.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnOKButton08022017_044414.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnlink06022017_060622.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnlink07022017_024319.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnlink07022017_102640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnlink08022017_050331.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ClickOnlink09022017_095959.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/Deleting CFT stack17022017_121547.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/Launching Blueprint06022017_060646.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/Launching Blueprint06022017_061631.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/Launching Blueprint07022017_101934.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/Launching Blueprint15022017_042624.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/NewStackPageNotOpened10022017_015729.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/NewStackPageNotOpened13022017_032827.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ServiceNowLogin15022017_021745.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ServiceNowLogin15022017_022155.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ServiceNowLogin15022017_022434.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ServiceNowLogin15022017_023210.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ServiceNowLogin16022017_112442.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/ServiceNowLogin16022017_122926.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_044248.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051719.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051720.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051721.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051723.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051724.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051725.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051726.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051728.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051729.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051730.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051732.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051733.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051734.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051735.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051737.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051738.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051739.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051741.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051742.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051743.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051745.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051746.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051747.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051748.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051750.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051751.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051752.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051754.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051755.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051756.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051757.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051759.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051800.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051801.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051802.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051804.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051805.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051806.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051808.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051809.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051810.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051812.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051813.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051814.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051815.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051817.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051818.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051819.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051821.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051822.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051823.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051824.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051826.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051827.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051828.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051829.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051831.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051832.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051833.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051835.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051836.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051837.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051838.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051840.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051841.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051842.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051844.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051845.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051846.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051847.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051849.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051850.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051851.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051853.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051854.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051855.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051857.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051858.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051859.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051901.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051902.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051903.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051904.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051906.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051907.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051908.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051909.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051911.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051912.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051913.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051915.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051916.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051917.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051918.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051920.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051921.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051922.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051923.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051925.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051926.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051927.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051928.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051930.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051931.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051932.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051934.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051935.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051936.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051937.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051939.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051940.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051941.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051942.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051944.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051945.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051946.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051947.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051949.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051950.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051951.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051953.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051954.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051955.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051956.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051958.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_051959.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052000.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052001.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052003.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052004.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052005.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052006.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052008.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052009.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052010.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052012.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052013.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052014.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052015.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052017.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052018.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052019.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052021.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052022.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052023.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052024.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052026.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052027.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052028.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052030.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052031.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052032.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052033.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052035.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052036.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052037.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052038.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052040.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052041.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052042.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052044.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052045.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052046.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052047.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052049.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052050.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052051.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052052.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052054.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052055.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052056.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052058.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052059.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052101.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052103.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052104.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052105.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052106.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052108.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052109.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_052110.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_054450.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_060325.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement06022017_061309.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement07022017_023905.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement07022017_061809.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement07022017_062058.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement07022017_101613.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement07022017_102143.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement15022017_034526.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement15022017_042343.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement16022017_043746.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement17022017_015437.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement17022017_123205.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/TextNotFoundInElement17022017_124300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickBOTSOption03022017_021332.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickBOTSOption06022017_040211.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickBOTSOption10022017_020324.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickBOTSOption13022017_053938.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickBOTSOption17022017_124528.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickExecuteButton03022017_025246.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_010045.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_023640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_114343.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_122538.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_123652.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_123923.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType14022017_125831.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType15022017_025655.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnBlueprintType17022017_021550.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnConfirmatinButton06022017_043400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOnWorkZoneLink06022017_040520.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOntheLink06022017_044804.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOntheLink06022017_045728.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOntheLink06022017_052114.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOntheLink06022017_053625.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOntheLink06022017_054806.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/clickOntheLink06022017_061635.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterStackName06022017_024523.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername03022017_010214.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername03022017_015334.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername13022017_062258.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername14022017_023409.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername14022017_113902.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername14022017_122307.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername15022017_035726.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/enterUsername17022017_112915.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress09022017_024604.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_023613.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_023920.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_024427.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_024745.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_034051.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_051832.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress15022017_052835.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_021353.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_022257.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_025903.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_032804.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_094928.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_095515.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_100118.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_104312.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_105940.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_111559.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_115559.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_122349.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_123926.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/getIPAddress16022017_125924.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_113758.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_114227.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_123433.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_124324.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_124346.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_124834.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails14022017_125041.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/redirect-to-url-fails15022017_042022.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyBotsname03022017_015625.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyBotsname03022017_060642.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyBotsname14022017_115911.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyBotsname14022017_121141.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyInstances07022017_021544.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyInstances09022017_022946.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry15022017_041316.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry15022017_045326.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry15022017_045800.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry15022017_050450.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry15022017_051036.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry16022017_043417.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry16022017_045659.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry16022017_051939.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry17022017_013749.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/screenshots/verifyingInstancesInTelemetry17022017_021015.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/CreateJiraUserRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/CreateOrganizationRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/DeleteOrganizationRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Design/ConfigBlueprintForCFTUsingProAWS.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Design/ConfigBlueprintForOSImageUsingProAWS.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Design/ConfigBlueprintForSSTempUsingProAWS.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Design/CreateCloudFormationBlueprint.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Design/CreateDataInSettModuleReqForDesignModule.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Design/CreateSoftwareStackBlueprint.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestRunner7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/UATRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/JavaStack.template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/azureTestTemplate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/bootstrapncal.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/jagadeesh12_ChefServerFile/jagadeesh12.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/jagadeesh12_ChefServerFile/knife.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/key_rldc_new_openstack.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/knife.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/mycatqa.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/pcjoshi9_ChefServerFile/knife.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/pcjoshi9_ChefServerFile/pcjoshi9.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/rlcatalyst.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Upload/rlcatalyst.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/JiraScenarios/createJiraUser.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/ServiceController.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/StackName.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/UAT/UAT.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/ChefServerSetup.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/ConfigurePuppetServerUsingPass.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/ConfigurePuppetServerUsingPem.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/CreateChefServer.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/CreateEditDelEnvByCreatingNewEnv.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/CreateEnvFromChef.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/CreateEnvUsingEnvFromChefServer.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/CreateNewEnvironment.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/configsetup/ImportNodesFromChef.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/1CreateAWSProvider.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigAWSProviderWithInvalidKey.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigureAWSProviderUsingAccessKey.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigureAWSProviderUsingIAMRole.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigureAzureProvider.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigureNexusServer.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigureOpenStackProvider.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/ConfigureVMWareProvider.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/CreateEditDelDocker.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/CreateEditDelJenkins.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/devopssetup/CreateVMImgAWS.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/1CreateSoftwareStackTemp.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateCloudFormationTemp.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDelCloudFormationTemp.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDelDockerTemplate.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDelSoftwareStackTemp.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDelVMImageUsingProviderTypeAWS.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDelVMImageUsingProviderTypeOpenStack.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDelVMImageUsingProviderTypeVMware.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDeleteARMTemplate.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/gallerysetup/CreateEditDeleteVMImageUsingProviderTypeAzure.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/1CreateOrganization.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/CreateBusinessGroup.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/CreateEditDelBGroup.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/CreateEditDelOrg.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/CreateEditDelProject.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/CreateProject.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/orgsetup/DeleteOrganization.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/providersync/providersync.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateEditDelDesigner.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateEditDelOrgAdmin.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateEditDelSuperadmin.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateEditDeleteTeams.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateNewTeam.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateOrgAdmin.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateOrgAndVerifyFourAutoCreatedTeams.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/userssetup/CreateSuperadmin.feature" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/catalyst/settings/UAT/UAT.feature" afterPath="$PROJECT_DIR$/target/test-classes/catalyst/settings/UAT/UAT.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/UATRunner.java" afterPath="$PROJECT_DIR$/src/test/java/UATRunner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,38 +499,8 @@
       <file leaf-file-name="UAT.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UATViews.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeleniumUtilities.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/utils/SeleniumUtilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="2570" column="19" lean-forward="false" selection-start-line="2570" selection-start-column="19" selection-end-line="2570" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UATSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+            <state relative-caret-position="75">
+              <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -71,28 +509,38 @@
       <file leaf-file-name="CFTSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="274" column="22" lean-forward="false" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
+            <state relative-caret-position="201">
+              <caret line="326" column="24" lean-forward="false" selection-start-line="326" selection-start-column="24" selection-end-line="326" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintStream.java">
+      <file leaf-file-name="UATRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/UATRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="803" column="16" lean-forward="false" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
+            <state relative-caret-position="105">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CFTViews.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java">
+      <file leaf-file-name="UATViews.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="546" column="23" lean-forward="false" selection-start-line="546" selection-start-column="23" selection-end-line="546" selection-end-column="23" />
+            <state relative-caret-position="6">
+              <caret line="686" column="23" lean-forward="false" selection-start-line="686" selection-start-column="23" selection-end-line="686" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UATSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="249" column="26" lean-forward="false" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -139,10 +587,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/rl/qa/steps/UATRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/UATRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
         <option value="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/UATRunner.java" />
       </list>
     </option>
   </component>
@@ -207,9 +655,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,40 +669,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UAT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UAT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UAT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UAT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,7 +694,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: As a admin I login into catalyst">
+  <component name="RunManager" selected="JUnit.UATRunner">
     <configuration default="false" name="Feature: UAT" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -650,8 +1066,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: As a admin I login into catalyst" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UATRunner" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UATRunner" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: As a admin I login into catalyst" />
         <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: UAT" />
         <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: I login to service now and verify the status of Nginx Ticket status" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: I login in slack bot and verify Nginx is down" />
@@ -672,25 +1088,10 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 12h 21m 46s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 17h 21m 54s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 12h 38m 26s.xml">
-      <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 12h 43m 00s.xml">
-      <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 12h 45m 28s.xml">
-      <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 13h 11m 19s.xml">
-      <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 14h 15m 51s.xml">
-      <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.17 at 14h 19m 44s.xml">
+    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.20 at 11h 20m 30s.xml">
       <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="UATRunner - 2017.02.17 at 13h 37m 50s.xml">
@@ -702,10 +1103,25 @@
     <history-entry file="UATRunner - 2017.02.17 at 14h 10m 17s.xml">
       <configuration name="UATRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UATRunner - 2017.02.17 at 16h 45m 47s.xml">
+      <configuration name="UATRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UATRunner - 2017.02.20 at 10h 10m 07s.xml">
+      <configuration name="UATRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UATRunner - 2017.02.20 at 10h 10m 26s.xml">
+      <configuration name="UATRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UATRunner - 2017.02.20 at 11h 22m 27s.xml">
+      <configuration name="UATRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UATRunner - 2017.02.20 at 11h 44m 08s.xml">
+      <configuration name="UATRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -722,7 +1138,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18216756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18216756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -859,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="339" column="29" lean-forward="false" selection-start-line="339" selection-start-column="29" selection-end-line="339" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,10 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="79" column="47" lean-forward="true" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
-          <folding>
-            <element signature="e#4282#4283#0" expanded="false" />
-            <element signature="e#4344#4345#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,7 +1401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +1408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,6 +1460,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="210" column="23" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="803" column="16" lean-forward="false" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="546" column="23" lean-forward="false" selection-start-line="546" selection-start-column="23" selection-end-line="546" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1066,56 +1489,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/UATSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="803" column="16" lean-forward="false" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UATRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="249" column="26" lean-forward="false" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/steps/CFTSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="274" column="22" lean-forward="false" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
+        <state relative-caret-position="201">
+          <caret line="326" column="24" lean-forward="false" selection-start-line="326" selection-start-column="24" selection-end-line="326" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/CFTViews.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/UATRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="546" column="23" lean-forward="false" selection-start-line="546" selection-start-column="23" selection-end-line="546" selection-end-column="23" />
+        <state relative-caret-position="105">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="686" column="23" lean-forward="false" selection-start-line="686" selection-start-column="23" selection-end-line="686" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding />
         </state>
       </provider>

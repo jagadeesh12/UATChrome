@@ -218,7 +218,7 @@ public class UATViews
     public static void verifyStackName(String stackName) {
         try{
             SeleniumUtil.elementShouldVisible("xpath","//*[contains(text(),'"+stackName+"')]",10,SeleniumUtilities.OBJWAITTIMEOUT);
-            for(int i=0;i<=5;i++){
+            for(int i=0;i<=4;i++){
 
 
                    String status=SeleniumUtil.getTextValue("xpath","//*[contains(text(),'"+stackName+"')]/../../../following-sibling::div[1]/div[2]",SeleniumUtilities.OBJWAITTIMEOUT);
@@ -457,7 +457,7 @@ public class UATViews
             SeleniumUtil.type("id","email", emailId, SeleniumUtilities.OBJWAITTIMEOUT);
         }
         catch(Exception ex){
-            BaseView.takeScreenshot("enterUsername");
+            BaseView.takeScreenshot("SlackSignIn");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
         }
@@ -470,7 +470,7 @@ public class UATViews
             SeleniumUtil.type("id","password", slackpass, SeleniumUtilities.OBJWAITTIMEOUT);
         }
         catch(Exception ex){
-            BaseView.takeScreenshot("enterUsername");
+            BaseView.takeScreenshot("SlackSignIn");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
         }
@@ -483,7 +483,7 @@ public class UATViews
             SeleniumUtil.click("id","signin_btn", SeleniumUtilities.OBJWAITTIMEOUT);
         }
         catch(Exception ex){
-            BaseView.takeScreenshot("enterUsername");
+            BaseView.takeScreenshot("SlackSignIn");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
         }
@@ -867,7 +867,7 @@ public class UATViews
 
         }
         catch(Exception ex){
-            BaseView.takeScreenshot("ServiceNowLogin");
+            BaseView.takeScreenshot("Catalyst Login");
             SeleniumUtil.Log.info("Error :" + ex.getMessage());
             fail(ex.getMessage());
         }

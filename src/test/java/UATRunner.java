@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
             features = {
                     "src/test/resources/catalyst/settings/UAT/UAT.feature",
             },
-            //tags={"@Jira"},
+
             glue={"com.rl.qa"},
             format = {"pretty", "html:target/cucumber", "json:target/reports/json/UATforCFT.json"}
     )
