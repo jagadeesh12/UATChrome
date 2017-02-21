@@ -1,5 +1,5 @@
-Feature: CFT stack
-  Scenario: As a admin I login into catalyst and launch CFT stack
+Feature: CFT Blueprint launch
+  Scenario:  Launch CFT, Stop the Nginx Service , Check Notification and Remediation
 
     Given I login to catalyst using username and access credentials password
     And I click on "Bots" option
