@@ -1,5 +1,5 @@
-Feature: As a admin I login into catalyst
-  Scenario: As a admin I login into catalyst
+Feature: CFT stack
+  Scenario: As a admin I login into catalyst and launch CFT stack
 
     Given I login to catalyst using username and access credentials password
     And I click on "Bots" option
