@@ -491,8 +491,8 @@ public class UATViews
 
     public static void clickOnProject() {
         try {
-            SeleniumUtil.waitForElementIsClickable("xpath",".//*[@id='channel-list']/li[1]/button",4,SeleniumUtilities.OBJWAITTIMEOUT);
-            SeleniumUtil.click("xpath",".//*[@id='channel-list']/li[1]/button", SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.waitForElementIsClickable("xpath","//span[contains(text(),'botsfactory')]",4,SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath","//span[contains(text(),'botsfactory')]", SeleniumUtilities.OBJWAITTIMEOUT);
         }
         catch(Exception ex){
             BaseView.takeScreenshot("enterUsername");
