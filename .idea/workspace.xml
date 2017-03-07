@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23c2efce-db95-48b9-8b00-f8110e9f1a01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" afterPath="$PROJECT_DIR$/src/main/java/com/rl/qa/views/UATViews.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" afterPath="$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="UAT.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="-600">
+              <caret line="8" column="68" lean-forward="true" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -618,14 +617,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__As_a_admin_I_login_into_catalyst - 2017.02.20 at 11h 20m 30s.xml">
-      <configuration name="Scenario: As a admin I login into catalyst" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__Launch_CFT,_Stop_the_Nginx_Service_,_Check_Notification_and_Remediation - 2017.03.07 at 11h 35m 56s.xml">
       <configuration name="Scenario: Launch CFT, Stop the Nginx Service , Check Notification and Remediation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="UATRunner - 2017.02.17 at 13h 37m 50s.xml">
-      <configuration name="UATRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__Launch_CFT,_Stop_the_Nginx_Service_,_Check_Notification_and_Remediation - 2017.03.07 at 11h 38m 08s.xml">
+      <configuration name="Scenario: Launch CFT, Stop the Nginx Service , Check Notification and Remediation" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Launch_CFT,_Stop_the_Nginx_Service_,_Check_Notification_and_Remediation - 2017.03.07 at 11h 40m 55s.xml">
+      <configuration name="Scenario: Launch CFT, Stop the Nginx Service , Check Notification and Remediation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="UATRunner - 2017.02.17 at 13h 54m 39s.xml">
       <configuration name="UATRunner" configurationId="JUnit" />
@@ -1004,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/catalyst/settings/UAT/UAT.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="-600">
+          <caret line="8" column="68" lean-forward="true" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
           <folding />
         </state>
       </provider>
