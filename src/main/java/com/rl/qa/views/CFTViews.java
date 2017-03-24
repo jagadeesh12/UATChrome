@@ -532,7 +532,7 @@ public class CFTViews {
             //System.out.print(IP);
             SeleniumUtil.clear("xpath", ".//*[@id='booleanTable']/tbody/tr[4]/td[3]/input",SeleniumUtilities.OBJWAITTIMEOUT);
             SeleniumUtil.type("xpath", ".//*[@id='booleanTable']/tbody/tr[4]/td[3]/input",ip, SeleniumUtilities.OBJWAITTIMEOUT);
-            SeleniumUtil.click("xpath",".//*[@id='editParamsPage']/form/div[3]/button[2]",SeleniumUtilities.OBJWAITTIMEOUT);
+            SeleniumUtil.click("xpath",".//*[@id='editParamsPage']/div/button[2]",SeleniumUtilities.OBJWAITTIMEOUT);
 
         }
         catch(Exception ex){ BaseView.takeScreenshot("clickOnBlueprintType");
