@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
     @CucumberOptions(
             features = {
                     "src/test/resources/catalyst/settings/UAT/UAT.feature",
-                "src/test/resources/catalyst/settings/AzureBlueprint.feature",
+                
             },
 
             glue={"com.rl.qa"},
