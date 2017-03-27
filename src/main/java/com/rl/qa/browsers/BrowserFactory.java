@@ -58,7 +58,7 @@ public class BrowserFactory {
         options.setExperimentalOption("prefs", prefs);
         caps.setCapability(ChromeOptions.CAPABILITY, options);
 
-        System.setProperty("webdriver.chrome.driver", "/home/azureuser/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/azureuser/jenkins-agent/jenkins-agent/workspace/Catalyst_UAT_Flow_Latest/src/main/resources");
         return new Augmenter().augment(new ChromeDriver(caps));
     }
 
