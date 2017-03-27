@@ -1,0 +1,824 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Launch CFT, Stop the Nginx Service , Check Notification and Remediation",
+        "description": "",
+        "id": "cft-blueprint-launch;launch-cft,-stop-the-nginx-service-,-check-notification-and-remediation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53913209470,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I login to catalyst using username and access credentials password",
+            "match": {
+              "location": "UATSteps.iLoginToCatalystUsingUsernameAndAccessCredentialsPassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5584373917,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on \"Bots\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bots",
+                  "offset": 12
+                }
+              ],
+              "location": "UATSteps.iClickOnOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11388289184,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify \"Demo-Customername\" Botname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Demo-Customername",
+                  "offset": 10
+                }
+              ],
+              "location": "UATSteps.iVerifyBotname(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 521133640,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 7,
+                "value": "#And I click on Execute button"
+              }
+            ],
+            "line": 8,
+            "name": "I execute \"Demo-Customername\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Demo-Customername",
+                  "offset": 11
+                }
+              ],
+              "location": "UATSteps.iExecute(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10985529345,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select RL_Devops from the Choose Environment dropdown menu",
+            "match": {
+              "location": "UATSteps.iSelectRL_DevopsFromTheChooseEnvironmentDropdownMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10263153999,
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d55.0.2883.87)\n  (Driver info: chromedriver\u003d2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform\u003dLinux 4.4.0-66-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 11 milliseconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027N/A\u0027, ip: \u0027N/A\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-66-generic\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320), userDataDir\u003d/tmp/.org.chromium.Chromium.SAEgGb}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d55.0.2883.87, platform\u003dLINUX, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6e65986ba39e5f5ea59b68fa3fbdba2a\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)\n\tat com.rl.qa.browsers.BrowserDriver.takeScreenshot(BrowserDriver.java:65)\n\tat com.rl.qa.utils.BaseView.takeScreenshot(BaseView.java:156)\n\tat com.rl.qa.views.UATViews.selectSensuProdFromTheDropdown(UATViews.java:139)\n\tat com.rl.qa.steps.UATSteps.iSelectSensuProdFromTheMonitoringDropdownMenu(UATSteps.java:160)\n\tat ✽.And I select Sensu Prod from the Monitoring dropdown menu(src/test/resources/catalyst/settings/UAT/UAT.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I select Sensu Prod from the Monitoring dropdown menu",
+            "match": {
+              "location": "UATSteps.iSelectSensuProdFromTheMonitoringDropdownMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#And I select Sensu Server from the Tag Server dropdown menu"
+              }
+            ],
+            "line": 12,
+            "name": "I click on Ok button",
+            "match": {
+              "location": "UATSteps.iClickOnOkButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enter unique stack name",
+            "match": {
+              "location": "UATSteps.iEnterUniqueStackName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I click on ok button",
+            "match": {
+              "location": "UATSteps.iClickOnokButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I verify the following message \"Your Selected Blueprint is being Launched, kindly check back in a while\" on \"Launching Blueprint\" popup window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your Selected Blueprint is being Launched, kindly check back in a while",
+                  "offset": 32
+                },
+                {
+                  "val": "Launching Blueprint",
+                  "offset": 109
+                }
+              ],
+              "location": "CFTSteps.I_verify_the_following_message_on_popup_window(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I click on the \"Close\" button on Launching Blueprint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Close",
+                  "offset": 16
+                }
+              ],
+              "location": "UATSteps.iClickOnTheButtonOnLaunchingBlueprint(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I navigate to the \"Workzone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Workzone",
+                  "offset": 19
+                }
+              ],
+              "location": "CFTSteps.I_navigate_to_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I click on Menu option",
+            "match": {
+              "location": "UATSteps.iClickOnMenuOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I click on the \"RL_Devops\" Link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "RL_Devops",
+                  "offset": 16
+                }
+              ],
+              "location": "UATSteps.iClickOnTheLink(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I click on the \"Infrastructure\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Infrastructure",
+                  "offset": 16
+                }
+              ],
+              "location": "CFTSteps.I_click_on_the_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I expand the \"CloudFormation\" section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CloudFormation",
+                  "offset": 14
+                }
+              ],
+              "location": "CFTSteps.I_expand_the_section(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I verify the stack name and status \"CREATE_COMPLETE\" in cloudformation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CREATE_COMPLETE",
+                  "offset": 36
+                }
+              ],
+              "location": "UATSteps.iVerifyTheStackNameAndStatusInCloudformation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I click on the \"Infrastructure\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Infrastructure",
+                  "offset": 16
+                }
+              ],
+              "location": "CFTSteps.I_click_on_the_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I click on the \"Instances\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Instances",
+                  "offset": 16
+                }
+              ],
+              "location": "CFTSteps.I_click_on_the_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I click on refresh button",
+            "match": {
+              "location": "UATSteps.iClickOnRefreshButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I verify \"NginX\" and \"Catalyst\" instances",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NginX",
+                  "offset": 10
+                },
+                {
+                  "val": "Catalyst",
+                  "offset": 22
+                }
+              ],
+              "location": "UATSteps.iVerifyAndInstances(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I verify Bootstrap status for \"Catalyst\" instances",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Catalyst",
+                  "offset": 31
+                }
+              ],
+              "location": "UATSteps.iVerifyBootstrapStatusForInstances(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I extract IP address of NginX instance card",
+            "match": {
+              "location": "CFTSteps.iExtractIPAddressOfNginXInstanceCard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I extract IP address of Catayst instance card",
+            "match": {
+              "location": "CFTSteps.iExtractIPAddressOfCataystInstanceCard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I verify the new created stack URL",
+            "match": {
+              "location": "UATSteps.iVerifyTheNewCreatedStackURL()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I navigate to catalyst",
+            "match": {
+              "location": "UATSteps.iNavigateToCatalyst()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I click on \"Bots\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bots",
+                  "offset": 12
+                }
+              ],
+              "location": "UATSteps.iClickOnOption(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 33,
+                "value": "#   And I enter \"ServiceStop - Demo\" in search box"
+              }
+            ],
+            "line": 34,
+            "name": "I verify \"ServiceStop - Demo\" Botname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ServiceStop - Demo",
+                  "offset": 10
+                }
+              ],
+              "location": "UATSteps.iVerifyBotname(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I execute \"ServiceStop - Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ServiceStop - Demo",
+                  "offset": 11
+                }
+              ],
+              "location": "UATSteps.iExecute(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I enter \"IP\" Botname for \"Nginx Host IP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IP",
+                  "offset": 9
+                },
+                {
+                  "val": "Nginx Host IP",
+                  "offset": 26
+                }
+              ],
+              "location": "CFTSteps.iEnterBotnameFor(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I close the Execute log",
+            "match": {
+              "location": "UATSteps.iCloseTheExecuteLog()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I verify the new created stack URL is not present",
+            "match": {
+              "location": "UATSteps.iVerifyTheNewCreatedStackURLIsNotPresent()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I navigate to catalyst",
+            "match": {
+              "location": "UATSteps.iNavigateToCatalyst()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I click on Tracks option",
+            "match": {
+              "location": "UATSteps.iClickOnTracksOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I click on Menu",
+            "match": {
+              "location": "UATSteps.iClickOnMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "I click on Telemetry",
+            "match": {
+              "location": "UATSteps.iClickOnTelemetry()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "I click on Instances",
+            "match": {
+              "location": "UATSteps.iClickOnInstances()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I verify Nginx IP",
+            "match": {
+              "location": "CFTSteps.iVerifyNginxIP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I verify Catalyst IP",
+            "match": {
+              "location": "CFTSteps.iVerifyCatalystIP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I click on Events option",
+            "match": {
+              "location": "UATSteps.iClickOnEventsOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I verify events",
+            "match": {
+              "location": "CFTSteps.iVerifyEvents()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "I switch to default frame",
+            "match": {
+              "location": "CFTSteps.I_switch_to_default_frame()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "I login in slack bot",
+            "match": {
+              "location": "UATSteps.iLoginInSlackBot()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "I click on Botsfactory Project",
+            "match": {
+              "location": "UATSteps.iClickOnBotsfactoryProject()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "I verify the Nginx is down",
+            "match": {
+              "location": "CFTSteps.iVerifyTheNginxIsDown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "I extract the Ticket ID",
+            "match": {
+              "location": "CFTSteps.iExtractTheTicketID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 53,
+                "value": "#    Then Ticket status should be closed"
+              }
+            ],
+            "line": 54,
+            "name": "I login to service now",
+            "match": {
+              "location": "UATSteps.iLoginToServiceNow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "I search the Ticket ID",
+            "match": {
+              "location": "CFTSteps.iSearchTheTicketID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "I verify Ticket status",
+            "match": {
+              "location": "CFTSteps.iVerifyTicketStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "I navigate to catalyst",
+            "match": {
+              "location": "UATSteps.iNavigateToCatalyst()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "I navigate to the \"Workzone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Workzone",
+                  "offset": 19
+                }
+              ],
+              "location": "CFTSteps.I_navigate_to_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "I click on Menu option",
+            "match": {
+              "location": "UATSteps.iClickOnMenuOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I click on the \"RL_Devops\" Link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "RL_Devops",
+                  "offset": 16
+                }
+              ],
+              "location": "UATSteps.iClickOnTheLink(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I click on the \"Infrastructure\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Infrastructure",
+                  "offset": 16
+                }
+              ],
+              "location": "CFTSteps.I_click_on_the_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "I expand the \"CloudFormation\" section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CloudFormation",
+                  "offset": 14
+                }
+              ],
+              "location": "CFTSteps.I_expand_the_section(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "I Delete the stack from Cloud Formation",
+            "match": {
+              "location": "UATSteps.iDeleteTheStackFromCloudFormation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I logout from catalyst",
+            "match": {
+              "location": "UATSteps.iLogoutFromCatalyst()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "CFT Blueprint launch",
+    "description": "",
+    "id": "cft-blueprint-launch",
+    "keyword": "Feature",
+    "uri": "src/test/resources/catalyst/settings/UAT/UAT.feature"
+  }
+]

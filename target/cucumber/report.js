@@ -1,290 +1,403 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/catalyst/settings/AzureBlueprint.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/catalyst/settings/UAT/UAT.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Blueprint Launch in Azure",
+  "line": 1,
+  "name": "CFT Blueprint launch",
   "description": "",
-  "id": "blueprint-launch-in-azure",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Azure"
-    }
-  ]
+  "id": "cft-blueprint-launch",
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 48,
-  "name": "As a user I launch Blueprint in Azure using ARM template",
+  "line": 2,
+  "name": "Launch CFT, Stop the Nginx Service , Check Notification and Remediation",
   "description": "",
-  "id": "blueprint-launch-in-azure;as-a-user-i-launch-blueprint-in-azure-using-arm-template;;2",
+  "id": "cft-blueprint-launch;launch-cft,-stop-the-nginx-service-,-check-notification-and-remediation",
   "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Azure"
-    }
-  ]
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I login to catalyst using username and access credentials password",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I click on \"Bots\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "I verify \"Demo-Customername\" Botname",
+  "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 4,
-      "value": "#    Given I Login to Azure using \"\u003curl\u003e\" credential"
-    },
-    {
-      "line": 5,
-      "value": "#    And I enter my \"\u003cusername\u003e\""
-    },
-    {
-      "line": 6,
-      "value": "#    And I entermy  \"\u003cpassword\u003e\""
-    },
-    {
       "line": 7,
-      "value": "#    And I click on Sign_in"
-    },
-    {
-      "line": 8,
-      "value": "#    And I click on Menu"
-    },
-    {
-      "line": 9,
-      "value": "#    And I click on ResourceGroup"
-    },
-    {
-      "line": 10,
-      "value": "#    And I click on Add"
-    },
-    {
-      "line": 11,
-      "value": "#    And I enter the  \"\u003cGpname\u003e\""
-    },
-    {
-      "line": 12,
-      "value": "#    And I select on the \"\u003cSubscription\u003e\""
-    },
-    {
-      "line": 13,
-      "value": "#    And I select  \"\u003cLocation\u003e\""
-    },
-    {
-      "line": 14,
-      "value": "#    And I click on Create"
-    },
-    {
-      "line": 15,
-      "value": "#Now I have to open the catalyst to launch the ARM azure blueprint"
+      "value": "#And I click on Execute button"
     }
   ],
-  "line": 16,
-  "name": "I Login to catalyst using \"http://neo.rlcatalyst.com/cat3/\" Acess",
-  "matchedColumns": [
-    0
+  "line": 8,
+  "name": "I execute \"Demo-Customername\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "I select RL_Devops from the Choose Environment dropdown menu",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I select Sensu Prod from the Monitoring dropdown menu",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 11,
+      "value": "#And I select Sensu Server from the Tag Server dropdown menu"
+    }
   ],
-  "keyword": "Given "
+  "line": 12,
+  "name": "I click on Ok button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I enter unique stack name",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "I click on ok button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "I verify the following message \"Your Selected Blueprint is being Launched, kindly check back in a while\" on \"Launching Blueprint\" popup window",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I click on the \"Close\" button on Launching Blueprint",
+  "keyword": "And "
 });
 formatter.step({
   "line": 17,
-  "name": "I enter  \"superadmin\"  User name text box",
-  "matchedColumns": [
-    17
-  ],
+  "name": "I navigate to the \"Workzone\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "I enter \"superadmin@123\"   Password testbox",
-  "matchedColumns": [
-    18
-  ],
+  "name": "I click on Menu option",
   "keyword": "And "
 });
 formatter.step({
   "line": 19,
-  "name": "I click on Login button",
+  "name": "I click on the \"RL_Devops\" Link",
   "keyword": "And "
 });
 formatter.step({
   "line": 20,
-  "name": "I click on the \"DESIGN\" link of this",
+  "name": "I click on the \"Infrastructure\" link",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "I clicked menu button",
+  "name": "I expand the \"CloudFormation\" section",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
-  "name": "I click on Azure",
+  "name": "I verify the stack name and status \"CREATE_COMPLETE\" in cloudformation",
   "keyword": "And "
 });
 formatter.step({
   "line": 23,
-  "name": "I click on ARM template",
+  "name": "I click on the \"Infrastructure\" link",
   "keyword": "And "
 });
 formatter.step({
   "line": 24,
-  "name": "I click on Filter",
+  "name": "I click on the \"Instances\" link",
   "keyword": "And "
 });
 formatter.step({
   "line": 25,
-  "name": "I click on New optn",
+  "name": "I click on refresh button",
   "keyword": "And "
 });
 formatter.step({
   "line": 26,
-  "name": "I click on ARM1VM-New",
+  "name": "I verify \"NginX\" and \"Catalyst\" instances",
   "keyword": "And "
 });
 formatter.step({
   "line": 27,
-  "name": "I click on Blueprint\u0026Organisation",
+  "name": "I verify Bootstrap status for \"Catalyst\" instances",
   "keyword": "And "
 });
 formatter.step({
   "line": 28,
-  "name": "I enter    \"ARMBP\"",
-  "matchedColumns": [
-    7
-  ],
+  "name": "I extract IP address of NginX instance card",
   "keyword": "And "
 });
 formatter.step({
   "line": 29,
-  "name": "I select   \"RL\"",
-  "matchedColumns": [
-    8
-  ],
+  "name": "I extract IP address of Catayst instance card",
   "keyword": "And "
 });
 formatter.step({
   "line": 30,
-  "name": "I select the  \"Product\"",
-  "matchedColumns": [
-    9
-  ],
-  "keyword": "And "
+  "name": "I verify the new created stack URL",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 31,
-  "name": "I selected my \"Catalyst\"",
-  "matchedColumns": [
-    10
-  ],
+  "name": "I navigate to catalyst",
   "keyword": "And "
 });
 formatter.step({
   "line": 32,
-  "name": "I click on Configure Template",
+  "name": "I click on \"Bots\" option",
   "keyword": "And "
 });
 formatter.step({
-  "line": 33,
-  "name": "I select the \"AzureLatest\" option",
-  "matchedColumns": [
-    11
+  "comments": [
+    {
+      "line": 33,
+      "value": "#   And I enter \"ServiceStop - Demo\" in search box"
+    }
   ],
-  "keyword": "And "
-});
-formatter.step({
   "line": 34,
-  "name": "I  select  mine \"ARM\"",
-  "matchedColumns": [
-    14
-  ],
+  "name": "I verify \"ServiceStop - Demo\" Botname",
   "keyword": "And "
 });
 formatter.step({
   "line": 35,
-  "name": "I enter the   \"SradhaAdmin\"",
-  "matchedColumns": [
-    12
-  ],
+  "name": "I execute \"ServiceStop - Demo\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 36,
-  "name": "I put  the \"Sradha@123\"",
-  "matchedColumns": [
-    15
-  ],
+  "name": "I enter \"IP\" Botname for \"Nginx Host IP\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 37,
-  "name": "I enter  mine \"sradha-dns-d1\"",
-  "matchedColumns": [
-    13
-  ],
+  "name": "I close the Execute log",
   "keyword": "And "
 });
 formatter.step({
   "line": 38,
-  "name": "I  select \"14.04.2-LTS\" in optn",
-  "matchedColumns": [
-    16
-  ],
-  "keyword": "And "
+  "name": "I verify the new created stack URL is not present",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 39,
-  "name": "I hit on ConfigVms",
+  "name": "I navigate to catalyst",
   "keyword": "And "
 });
 formatter.step({
   "line": 40,
-  "name": "I click on SAVE",
+  "name": "I click on Tracks option",
   "keyword": "And "
 });
 formatter.step({
   "line": 41,
-  "name": "I click on Submit option",
+  "name": "I click on Menu",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 42,
+  "name": "I click on Telemetry",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "I click on Instances",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "I verify Nginx IP",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
+  "name": "I verify Catalyst IP",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 46,
+  "name": "I click on Events option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 47,
+  "name": "I verify events",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 48,
+  "name": "I switch to default frame",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 49,
+  "name": "I login in slack bot",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 50,
+  "name": "I click on Botsfactory Project",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 51,
+  "name": "I verify the Nginx is down",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 52,
+  "name": "I extract the Ticket ID",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 53,
+      "value": "#    Then Ticket status should be closed"
+    }
+  ],
+  "line": 54,
+  "name": "I login to service now",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 55,
+  "name": "I search the Ticket ID",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 56,
+  "name": "I verify Ticket status",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 57,
+  "name": "I navigate to catalyst",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 58,
+  "name": "I navigate to the \"Workzone\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 59,
+  "name": "I click on Menu option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "I click on the \"RL_Devops\" Link",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "I click on the \"Infrastructure\" link",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "I expand the \"CloudFormation\" section",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "I Delete the stack from Cloud Formation",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 64,
+  "name": "I logout from catalyst",
   "keyword": "And "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "http://neo.rlcatalyst.com/cat3/",
-      "offset": 27
-    }
-  ],
-  "location": "AzureBlueprintSteps.iLoginToCatalystUsingAcess(String)"
+  "location": "UATSteps.iLoginToCatalystUsingUsernameAndAccessCredentialsPassword()"
 });
 formatter.result({
-  "duration": 26330142284,
-  "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027sse0051-GA-78LMT-S2\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-66-generic\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: BrowserDriver\nCapabilities [{applicationCacheEnabled\u003dtrue, rotatable\u003dfalse, handlesAlerts\u003dtrue, databaseEnabled\u003dtrue, version\u003d35.0, platform\u003dLINUX, nativeEvents\u003dfalse, acceptSslCerts\u003dtrue, webStorageEnabled\u003dtrue, locationContextEnabled\u003dtrue, browserName\u003dfirefox, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 69dbcaf7-7f68-4f92-81d0-0295ccde95d9\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)\n\tat org.openqa.selenium.firefox.FirefoxDriver.getScreenshotAs(FirefoxDriver.java:341)\n\tat com.rl.qa.browsers.BrowserDriver.takeScreenshot(BrowserDriver.java:65)\n\tat com.rl.qa.utils.BaseView.takeScreenshot(BaseView.java:156)\n\tat com.rl.qa.browsers.BrowserDriver.loadPage(BrowserDriver.java:113)\n\tat com.rl.qa.steps.AzureBlueprintSteps.iLoginToCatalystUsingAcess(AzureBlueprintSteps.java:179)\n\tat ✽.Given I Login to catalyst using \"http://neo.rlcatalyst.com/cat3/\" Acess(src/test/resources/catalyst/settings/AzureBlueprint.feature:16)\nCaused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7058 [/127.0.0.1] failed: Connection refused (Connection refused)\n\tat org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)\n\tat org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)\n\tat org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)\n\tat org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)\n\tat org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)\n\tat org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)\n\tat org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)\n\tat org.openqa.selenium.firefox.FirefoxDriver.getScreenshotAs(FirefoxDriver.java:341)\n\tat com.rl.qa.browsers.BrowserDriver.takeScreenshot(BrowserDriver.java:65)\n\tat com.rl.qa.utils.BaseView.takeScreenshot(BaseView.java:156)\n\tat com.rl.qa.browsers.BrowserDriver.loadPage(BrowserDriver.java:113)\n\tat com.rl.qa.steps.AzureBlueprintSteps.iLoginToCatalystUsingAcess(AzureBlueprintSteps.java:179)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:34)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:30)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:35)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:297)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:89)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:40)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:94)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:160)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)\n\tat com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)\n\tat com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)\nCaused by: java.net.ConnectException: Connection refused (Connection refused)\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:589)\n\tat org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)\n\tat org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)\n\t... 79 more\n",
-  "status": "failed"
+  "duration": 53913209470,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "superadmin",
+      "val": "Bots",
+      "offset": 12
+    }
+  ],
+  "location": "UATSteps.iClickOnOption(String)"
+});
+formatter.result({
+  "duration": 5584373917,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Demo-Customername",
       "offset": 10
     }
   ],
-  "location": "AzureBlueprintSteps.iEnterUserNameTextBox(String)"
+  "location": "UATSteps.iVerifyBotname(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11388289184,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "superadmin@123",
-      "offset": 9
+      "val": "Demo-Customername",
+      "offset": 11
     }
   ],
-  "location": "AzureBlueprintSteps.iEnterPasswordTestbox(String)"
+  "location": "UATSteps.iExecute(String)"
+});
+formatter.result({
+  "duration": 521133640,
+  "status": "passed"
+});
+formatter.match({
+  "location": "UATSteps.iSelectRL_DevopsFromTheChooseEnvironmentDropdownMenu()"
+});
+formatter.result({
+  "duration": 10985529345,
+  "status": "passed"
+});
+formatter.match({
+  "location": "UATSteps.iSelectSensuProdFromTheMonitoringDropdownMenu()"
+});
+formatter.result({
+  "duration": 10263153999,
+  "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d55.0.2883.87)\n  (Driver info: chromedriver\u003d2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320),platform\u003dLinux 4.4.0-66-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 11 milliseconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027N/A\u0027, ip: \u0027N/A\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-66-generic\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320), userDataDir\u003d/tmp/.org.chromium.Chromium.SAEgGb}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d55.0.2883.87, platform\u003dLINUX, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6e65986ba39e5f5ea59b68fa3fbdba2a\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)\n\tat com.rl.qa.browsers.BrowserDriver.takeScreenshot(BrowserDriver.java:65)\n\tat com.rl.qa.utils.BaseView.takeScreenshot(BaseView.java:156)\n\tat com.rl.qa.views.UATViews.selectSensuProdFromTheDropdown(UATViews.java:139)\n\tat com.rl.qa.steps.UATSteps.iSelectSensuProdFromTheMonitoringDropdownMenu(UATSteps.java:160)\n\tat ✽.And I select Sensu Prod from the Monitoring dropdown menu(src/test/resources/catalyst/settings/UAT/UAT.feature:10)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnOkButton()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnLoginButton()"
+  "location": "UATSteps.iEnterUniqueStackName()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnokButton()"
 });
 formatter.result({
   "status": "skipped"
@@ -292,41 +405,27 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "DESIGN",
+      "val": "Your Selected Blueprint is being Launched, kindly check back in a while",
+      "offset": 32
+    },
+    {
+      "val": "Launching Blueprint",
+      "offset": 109
+    }
+  ],
+  "location": "CFTSteps.I_verify_the_following_message_on_popup_window(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Close",
       "offset": 16
     }
   ],
-  "location": "AzureBlueprintSteps.iClickOnTheLinkOfThis(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AzureBlueprintSteps.iClickedMenuButton()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnAzure()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnARMTemplate()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnFilter()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnNewOptn()"
+  "location": "UATSteps.iClickOnTheButtonOnLaunchingBlueprint(String)"
 });
 formatter.result({
   "status": "skipped"
@@ -334,17 +433,53 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "1",
+      "val": "Workzone",
+      "offset": 19
+    }
+  ],
+  "location": "CFTSteps.I_navigate_to_the(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnMenuOption()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "RL_Devops",
+      "offset": 16
+    }
+  ],
+  "location": "UATSteps.iClickOnTheLink(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Infrastructure",
+      "offset": 16
+    }
+  ],
+  "location": "CFTSteps.I_click_on_the_link(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "CloudFormation",
       "offset": 14
     }
   ],
-  "location": "AzureBlueprintSteps.iClickOnARMVMNew(int)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnBlueprintOrganisation()"
+  "location": "CFTSteps.I_expand_the_section(String)"
 });
 formatter.result({
   "status": "skipped"
@@ -352,11 +487,11 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "ARMBP",
-      "offset": 12
+      "val": "CREATE_COMPLETE",
+      "offset": 36
     }
   ],
-  "location": "AzureBlueprintSteps.iEnter(String)"
+  "location": "UATSteps.iVerifyTheStackNameAndStatusInCloudformation(String)"
 });
 formatter.result({
   "status": "skipped"
@@ -364,11 +499,11 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "RL",
-      "offset": 12
+      "val": "Infrastructure",
+      "offset": 16
     }
   ],
-  "location": "AzureBlueprintSteps.iSelect(String)"
+  "location": "CFTSteps.I_click_on_the_link(String)"
 });
 formatter.result({
   "status": "skipped"
@@ -376,11 +511,33 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "Product",
-      "offset": 15
+      "val": "Instances",
+      "offset": 16
     }
   ],
-  "location": "AzureBlueprintSteps.iSelectThe(String)"
+  "location": "CFTSteps.I_click_on_the_link(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnRefreshButton()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "NginX",
+      "offset": 10
+    },
+    {
+      "val": "Catalyst",
+      "offset": 22
+    }
+  ],
+  "location": "UATSteps.iVerifyAndInstances(String,String)"
 });
 formatter.result({
   "status": "skipped"
@@ -389,16 +546,34 @@ formatter.match({
   "arguments": [
     {
       "val": "Catalyst",
-      "offset": 15
+      "offset": 31
     }
   ],
-  "location": "AzureBlueprintSteps.iSelectedMy(String)"
+  "location": "UATSteps.iVerifyBootstrapStatusForInstances(String)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnConfigureTemplate()"
+  "location": "CFTSteps.iExtractIPAddressOfNginXInstanceCard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iExtractIPAddressOfCataystInstanceCard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iVerifyTheNewCreatedStackURL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iNavigateToCatalyst()"
 });
 formatter.result({
   "status": "skipped"
@@ -406,47 +581,11 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "AzureLatest",
-      "offset": 14
-    }
-  ],
-  "location": "AzureBlueprintSteps.iSelectTheOption(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ARM",
-      "offset": 17
-    }
-  ],
-  "location": "AzureBlueprintSteps.iSelectMine(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "SradhaAdmin",
-      "offset": 15
-    }
-  ],
-  "location": "AzureBlueprintSteps.iEnterThe(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Sradha@123",
+      "val": "Bots",
       "offset": 12
     }
   ],
-  "location": "AzureBlueprintSteps.iPutThe(String)"
+  "location": "UATSteps.iClickOnOption(String)"
 });
 formatter.result({
   "status": "skipped"
@@ -454,11 +593,11 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "sradha-dns-d1",
-      "offset": 15
+      "val": "ServiceStop - Demo",
+      "offset": 10
     }
   ],
-  "location": "AzureBlueprintSteps.iEnterMine(String)"
+  "location": "UATSteps.iVerifyBotname(String)"
 });
 formatter.result({
   "status": "skipped"
@@ -466,29 +605,213 @@ formatter.result({
 formatter.match({
   "arguments": [
     {
-      "val": "14.04.2-LTS",
+      "val": "ServiceStop - Demo",
       "offset": 11
     }
   ],
-  "location": "AzureBlueprintSteps.iSelectInOptn(String)"
+  "location": "UATSteps.iExecute(String)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "AzureBlueprintSteps.iHitOnConfigVms()"
+  "arguments": [
+    {
+      "val": "IP",
+      "offset": 9
+    },
+    {
+      "val": "Nginx Host IP",
+      "offset": 26
+    }
+  ],
+  "location": "CFTSteps.iEnterBotnameFor(String,String)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnSAVE()"
+  "location": "UATSteps.iCloseTheExecuteLog()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "AzureBlueprintSteps.iClickOnSubmitOption()"
+  "location": "UATSteps.iVerifyTheNewCreatedStackURLIsNotPresent()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iNavigateToCatalyst()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnTracksOption()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnMenu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnTelemetry()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnInstances()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iVerifyNginxIP()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iVerifyCatalystIP()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnEventsOption()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iVerifyEvents()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.I_switch_to_default_frame()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iLoginInSlackBot()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnBotsfactoryProject()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iVerifyTheNginxIsDown()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iExtractTheTicketID()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iLoginToServiceNow()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iSearchTheTicketID()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CFTSteps.iVerifyTicketStatus()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iNavigateToCatalyst()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Workzone",
+      "offset": 19
+    }
+  ],
+  "location": "CFTSteps.I_navigate_to_the(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iClickOnMenuOption()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "RL_Devops",
+      "offset": 16
+    }
+  ],
+  "location": "UATSteps.iClickOnTheLink(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Infrastructure",
+      "offset": 16
+    }
+  ],
+  "location": "CFTSteps.I_click_on_the_link(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "CloudFormation",
+      "offset": 14
+    }
+  ],
+  "location": "CFTSteps.I_expand_the_section(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iDeleteTheStackFromCloudFormation()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "UATSteps.iLogoutFromCatalyst()"
 });
 formatter.result({
   "status": "skipped"

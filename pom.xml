@@ -17,7 +17,8 @@
                   will substitute these property values in the lx-selenium.properties
                   file where they have parameters like ${iwms.url}.
                 -->
-                <browser>FIREFOX</browser>
+                <!--<browser>FIREFOX</browser>-->
+                <browser>CHROME</browser>
                 <iwms.url>http://neocatalyst.rlcatalyst.com/</iwms.url>
 
                 <!--<iwms.url>http://d4d.rlcatalyst.com/cat3/#/signin</iwms.url>-->
