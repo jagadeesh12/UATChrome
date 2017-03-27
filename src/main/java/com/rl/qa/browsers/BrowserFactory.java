@@ -58,7 +58,7 @@ public class BrowserFactory {
         options.setExperimentalOption("prefs", prefs);
         caps.setCapability(ChromeOptions.CAPABILITY, options);
 
-        System.setProperty("webdriver.chrome.driver", "/home/sse0049/Documents/UAT/src/main/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/azureuser/chromedriver");
         return new Augmenter().augment(new ChromeDriver(caps));
     }
 
